@@ -147,3 +147,78 @@ const fetchData = async () => {
 };
 fetchData();
 ```
+
+### Create HTML Table using pure Javascript
+
+```js
+/* create table */
+let _table = document.createElement('table');
+_table.setAttribute('id', 'dataTable');
+_table.classList.add('table', 'table-bordered', 'table-striped', 'table-sm');
+
+/* create thead & apped to table */
+let _thead = document.createElement('thead');
+_table.appendChild(_thead);
+
+/* create heading row with colspan td */
+let _headingTr = _thead.insertRow();
+let _headingTd = _headingTr.insertCell(0);
+_headingTd.colSpan = 3;
+
+/* add/insert tr within thead */
+let _headTr = _thead.insertRow();
+
+/* create th1 & append to tr within thead */
+let _headTh1 = document.createElement('th');
+_headTr.appendChild(_headTh1);
+
+/* create th2 & append to tr within thead */
+let _headTh2 = document.createElement('th');
+_headTr.appendChild(_headTh2);
+
+/* create th3 & append to tr within thead */
+let _headTh3 = document.createElement('th');
+_headTr.appendChild(_headTh3);
+
+/* create text element for th and append */
+let _headTh1Text = document.createTextNode('Language');
+_headTh1.appendChild(_headTh1Text);
+
+/* create text element for th and append */
+let _headTh2Text = document.createTextNode('Owner');
+_headTh2.appendChild(_headTh2Text);
+
+/* create text element for th and append */
+let _headTh3Text = document.createTextNode('Year');
+_headTh3.appendChild(_headTh3Text);
+
+/* create tbody & append to table */
+let _tbody = document.createElement('tbody');
+_table.appendChild(_tbody);
+
+/* finally table render to html */
+document.getElementById('dataRender').appendChild(_table);
+
+const fetchData = async () => {
+    await fetch('./jsons/coding_languages.json').then((response) => {
+        return response.json();
+    }).then((data) => {
+        console.log(data);
+        if (data.length) {
+            _headingTd.innerHTML = `<strong>Programming Languages</strong> (${data.length})`;
+            data.map((value, index) => {
+                let _tr = _tbody.insertRow();
+                let _td1 = _tr.insertCell(0);
+                let _td2 = _tr.insertCell(1);
+                let _td3 = _tr.insertCell(2);
+                _td1.innerHTML = `<strong>${value.language}</strong>`;
+                _td2.innerHTML = value.owner;
+                _td3.innerHTML = value.year;
+            });
+        }
+    }).catch((error) => {
+        console.log(error);
+    });
+};
+fetchData();
+```
