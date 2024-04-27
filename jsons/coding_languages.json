@@ -1,0 +1,53 @@
+[
+    {
+      "language": "C",
+      "year": 1972,
+      "owner": "Dennis Ritchie"
+    },
+    {
+      "language": "C++",
+      "year": 1983,
+      "owner": "Bjarne Stroustrup"
+    },
+    {
+      "language": "Java",
+      "year": 1995,
+      "owner": "James Gosling"
+    },
+    {
+      "language": "Python",
+      "year": 1991,
+      "owner": "Guido van Rossum"
+    },
+    {
+      "language": "JavaScript",
+      "year": 1995,
+      "owner": "Brendan Eich"
+    },
+    {
+      "language": "Ruby",
+      "year": 1995,
+      "owner": "Yukihiro Matsumoto"
+    },
+    {
+      "language": "PHP",
+      "year": 1994,
+      "owner": "Rasmus Lerdorf"
+    },
+    {
+      "language": "C#",
+      "year": 2000,
+      "owner": "Microsoft"
+    },
+    {
+      "language": "Swift",
+      "year": 2014,
+      "owner": "Apple Inc."
+    },
+    {
+      "language": "Go",
+      "year": 2009,
+      "owner": "Robert Griesemer, Rob Pike, Ken Thompson"
+    }
+  ]
+  

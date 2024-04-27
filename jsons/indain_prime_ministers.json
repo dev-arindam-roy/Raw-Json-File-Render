@@ -1,0 +1,62 @@
+[
+    {
+      "prime_minister": "Jawaharlal Nehru",
+      "years_served": "1947 - 1964"
+    },
+    {
+      "prime_minister": "Lal Bahadur Shastri",
+      "years_served": "1964 - 1966"
+    },
+    {
+      "prime_minister": "Indira Gandhi",
+      "years_served": "1966 - 1977, 1980 - 1984"
+    },
+    {
+      "prime_minister": "Morarji Desai",
+      "years_served": "1977 - 1979"
+    },
+    {
+      "prime_minister": "Charan Singh",
+      "years_served": "1979"
+    },
+    {
+      "prime_minister": "Rajiv Gandhi",
+      "years_served": "1984 - 1989"
+    },
+    {
+      "prime_minister": "Vishwanath Pratap Singh",
+      "years_served": "1989 - 1990"
+    },
+    {
+      "prime_minister": "Chandra Shekhar",
+      "years_served": "1990 - 1991"
+    },
+    {
+      "prime_minister": "P. V. Narasimha Rao",
+      "years_served": "1991 - 1996"
+    },
+    {
+      "prime_minister": "Atal Bihari Vajpayee",
+      "years_served": "1996"
+    },
+    {
+      "prime_minister": "H. D. Deve Gowda",
+      "years_served": "1996 - 1997"
+    },
+    {
+      "prime_minister": "Inder Kumar Gujral",
+      "years_served": "1997 - 1998"
+    },
+    {
+      "prime_minister": "Atal Bihari Vajpayee",
+      "years_served": "1998 - 2004"
+    },
+    {
+      "prime_minister": "Manmohan Singh",
+      "years_served": "2004 - 2014"
+    },
+    {
+      "prime_minister": "Narendra Modi",
+      "years_served": "2014 - Present"
+    }
+  ]
